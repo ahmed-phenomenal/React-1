@@ -1,0 +1,301 @@
+@media (max-width:991px) {
+  .about .content .line {
+    width: 15%; /* The line will take up 30% of the parent container's width */
+  }
+  .portfolio .content .line {
+    width: 15%; /* The line will take up 30% of the parent container's width */
+  }
+  .contact .content .line {
+    width: 15%; /* The line will take up 30% of the parent container's width */
+  }
+  .contact .content .input-display input{
+    width: 100% !important;
+  }
+  .contact .content .btn-success{
+    margin-right:73% ;
+  }
+  .navbar-nav{
+    background-color: #2C3E50;
+    transform: translateX(-13%) !important;
+    width: 135% !important;
+  }
+}
+@media (max-width:767px){
+  .navbar-nav{
+    background-color: #2C3E50;
+    transform: translateX(-3%) !important;
+    width: 120% !important;
+  }
+}
+/*navbar*/
+.navbar{
+  background-color: #2C3E50;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  transition: 0.5s;
+  z-index: 999;
+}
+.shrink{
+  height: 10vh !important;
+}
+.navbar h1 .navbar-brand{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.navbar .nav-link{
+  font-weight: 700;
+  background-color: #2C3E50;
+  width: fit-content;
+  height: fit-content;
+}
+.navbar .nav-link:hover , .navbar h1 .navbar-brand:hover{
+  cursor: pointer;
+}
+.navbar .nav-link.highlighted {
+  background-color: #1ABC9C !important;
+  color: white; /* Optional: You can change the text color too */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+/*home*/
+.home {
+  margin-top: 100px;
+  height: 80vh;
+  background-color: #1ABC9C;
+  place-items: center;
+  display: flex;
+  text-align: center;
+}
+.home .content img{
+  height: 300px;
+  width: 280px;
+}
+.home .content .star-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content .line {
+  width: 7%; /* The line will take up 30% of the parent container's width */
+  height: 4px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.home .content .star-icon {
+  color: white; /* Change color as desired */
+}
+/*about*/
+.about{
+  margin-top: 100px;
+  height: 80vh;
+  background-color: #1ABC9C;
+  place-items: center;
+  display: flex;
+  text-align: center;
+}
+.about .content  h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+.about .content .star-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .content .line {
+  width: 5%; /* The line will take up 30% of the parent container's width */
+  height: 4px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.about .content .star-icon {
+  color: white; /* Change color as desired */
+}
+/*portfolio*/
+.portfolio{
+  margin-top: 100px;
+  text-align: center;
+}
+.portfolio .content h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #2C3E50;
+}
+.portfolio .content .star-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .content .line {
+  width: 5%; /* The line will take up 30% of the parent container's width */
+  height: 4px;
+  background-color: #2C3E50;
+  margin: 0 20px;
+}
+.portfolio .content .star-icon {
+  color: #2C3E50; /* Change color as desired */
+}
+.portfolio .content .row img{
+  width: 100%;
+  height: 300px;
+  border-radius:5px ;
+}
+.portfolio .content .row img:hover{
+  cursor: pointer;
+}
+.portfolio .content .row .caption{
+  position: absolute;
+  bottom: 0;
+  left: 5.5%;
+  width: 89%;
+  border-radius: 5px;
+  height: 300px;
+  background-color: rgb(26 188 156 / 90%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+  overflow: hidden;
+  opacity: 0;
+}
+.portfolio .content .row .caption i{
+  font-size: 90px;
+}
+.portfolio .content .row .col-lg-4:hover .caption{
+  opacity: 1;
+  cursor: pointer;
+}
+.thumbnail {
+  cursor: pointer;
+  width: 200px; /* Adjust thumbnail size as needed */
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #555;
+}
+/*contact*/
+.contact{
+  margin-top: 150px;
+  text-align: center;
+}
+.contact .content h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #2C3E50;
+}
+.contact .content .star-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .content .line {
+  width: 5%; /* The line will take up 30% of the parent container's width */
+  height: 4px;
+  background-color: #2C3E50;
+  margin: 0 20px;
+}
+.contact .content .star-icon {
+  color: #2C3E50; /* Change color as desired */
+}
+.margin-top{
+  margin-top: 100px;
+}
+.contact .content .input-display .display-text{
+  transform: translateX(-24%);
+  color: #1ABC9C;
+}
+.contact .content .input-display input{
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #EEF0F2;
+  color: black;
+  padding-bottom: 15px;
+}
+.contact .content .input-display input::placeholder {
+  color: gray;
+}
+.contact .content .input-display input:focus{
+  outline: none;
+}
+.contact .content .btn-success{
+  background-color: #1ABC9C;
+  color: white;
+  border: 1px solid #1ABC9C;
+  padding: 7.5px 15px;
+  border-radius: 5px;
+  margin-right: 40%;
+}
+/*info*/
+.info{
+  background-color: #2C3E50;
+}
+.info .text{
+  font-size: 28px;
+  font-weight: 500;
+}
+.info .web i{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/*footer*/
+.footer{
+  background-color: #1A252F;
+}
+
+/*error*/
+.error .image img{
+  width: 100%;
+  height: 100vh;
+}
